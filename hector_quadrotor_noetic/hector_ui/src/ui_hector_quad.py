@@ -71,8 +71,8 @@ posicionLider_sub = rospy.Subscriber("/ground_truth/state", Odometry , pose_call
 orientaLider_sub = rospy.Subscriber("/ground_truth_to_tf/pose", PoseStamped , rot_callback)
 
 #Publishers
-takeoff_pub = rospy.Publisher('/ardrone/takeoff', Empty, queue_size=1)
-land_pub = rospy.Publisher('/ardrone/land', Empty, queue_size=1)
+takeoff_pub = rospy.Publisher('/takeoff', Empty, queue_size=1)
+land_pub = rospy.Publisher('/land', Empty, queue_size=1)
 vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
 
 def setText(text):
