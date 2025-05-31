@@ -1,13 +1,13 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import rospy
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Empty
 
 def takeoff_callback(msg): 
-  twist_msg.linear.z = 0.4
+  twist_msg.linear.z = 0.2
   i = 0
-  while i < 3:
+  while i < 2:
       cmd_vel_pub.publish(twist_msg)
       i = i + 1
       rate.sleep()
