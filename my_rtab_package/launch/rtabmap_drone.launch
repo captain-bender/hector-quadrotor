@@ -5,7 +5,7 @@
   <arg name="wait_for_transform"  default="0.2"/> 
   
   <!-- Navigation stuff (move_base) -->
-  <!-- <include file="$(find quadrotor_navigation)/launch/quadrotor_move_base_rtab.launch"/> -->
+  <include file="$(find quadrotor_navigation)/launch/quadrotor_move_base_rtab.launch"/>
   
   <group ns="rtabmap">
     <node name="rtabmap" pkg="rtabmap_slam" type="rtabmap" output="screen" args="$(arg args)">
