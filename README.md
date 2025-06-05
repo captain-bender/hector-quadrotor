@@ -1,7 +1,8 @@
 # Hector-quadrotor
 
-This is repo dedicated to experiments using the classic Hector quad rotor simulation. As a base I have used [hector-quadrotor-noetic](https://github.com/RAFALAMAO/hector-quadrotor-noetic/tree/main) and [TheConstuctCore](https://bitbucket.org/theconstructcore/workspace/repositories/) repositories in GitLab.
+This is repo dedicated to experiments using the classic Hector quad rotor simulation. As a base I have used [hector-quadrotor-noetic](https://github.com/RAFALAMAO/hector-quadrotor-noetic/tree/main) and [TheConstuctCore](https://bitbucket.org/theconstructcore/workspace/repositories/) repositories in GitLab. The simulation has been tested in ROS Noetic and Gazebo Classic 11.15.
 
+![img](./hector_quadrotor_noetic/imgs/screenshot.png)
 
 ## Helpful launch files
 
