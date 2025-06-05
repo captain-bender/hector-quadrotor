@@ -4,11 +4,8 @@ This is repo dedicated to experiments using the classic Hector quad rotor simula
 
 
 ## Helpful launch files
-Start hector-ui
-```
-roslaunch hector_ui hector_ui.launch
-```
 
+### Start simulations
 Start simulation in empty world
 ```
 roslaunch hector_quadrotor_gazebo quadrotor_empty_world.launch
@@ -19,7 +16,36 @@ Start simulation in outdoor world
 roslaunch hector_quadrotor_demo outdoor_flight_gazebo_no_rviz.launch
 ```
 
-Start rtab-map
+Start simulation in a livining room (including the takeoff/land plugin)
 ```
-roslaunch my_rtab_package rtabmap_drone.launch
+roslaunch hector_quadrotor_gazebo quadrotor_living_room.launch
+```
+
+
+### Control
+Start hector-ui
+```
+roslaunch hector_ui hector_ui.launch
+```
+
+Start keyboard teleoparation
+```
+roslaunch turtlebot_teleop keyboard_teleop.launch
+```
+
+Enable takeoff/landing behaviour
+```
+roslaunch takeoff_land take0ff_land.launch
+```
+
+
+### RTAB-Map
+Start rtab-map mapping
+```
+roslaunch my_rtab_package rtabmap_drone_mapping.launch
+```
+
+Start rtab-map localisation
+```
+roslaunch my_rtab_package rtabmap_drone_localisation.launch
 ```
