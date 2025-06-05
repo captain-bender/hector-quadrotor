@@ -28,5 +28,8 @@
     <arg name="y" value="$(arg y)"/>   
     <arg name="z" value="$(arg z)"/>   
   </include>
+
+  <!-- Enable takeoff/landing -->
+  <include file="$(find takeoff_land)/launch/takeoff_land.launch"/>
     
 </launch>
